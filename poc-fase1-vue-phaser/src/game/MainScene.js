@@ -31,4 +31,11 @@ export class MainScene extends Phaser.Scene {
     // || 'Anónimo' evita que el texto quede vacío
     this.etiqueta?.setText(nuevoNombre || 'Anónimo');
   }
+
+  cambiarColor(nuevoColor) {
+    if (!nuevoColor) return;
+    const numero = parseInt(nuevoColor.replace('#', ''), 16);
+    if (Number.isNaN(numero)) return;
+    this.avatar?.setFillStyle(numero);
+  }
 }

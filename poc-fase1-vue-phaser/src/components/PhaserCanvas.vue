@@ -4,7 +4,7 @@ import Phaser from 'phaser';
 import { MainScene } from '../game/MainScene';
 
 // Recibe la prop desde App.vue
-const props = defineProps(['nombreUsuario']);
+const props = defineProps(['nombreUsuario', 'colorAvatar']);
 
 // Apunta al <div ref="contenedor"> del template
 const contenedor = ref(null);
@@ -25,6 +25,9 @@ onMounted(() => {
   game.events.once('ready', () => {
     game?.scene.getScene('MainScene')?.actualizarNombre(props.nombreUsuario);
   });
+  game.events.once('ready', () => {
+    game?.scene.getScene('MainScene')?.cambiarColor(props.colorAvatar);
+  });
 });
 
 // IMPRESCINDIBLE: al ocultar (v-if="false"), detiene el bucle y libera memoria
@@ -35,6 +38,24 @@ watch(() => props.nombreUsuario, (nuevoNombre) => {
   const escena = game?.scene.getScene('MainScene');
   escena?.actualizarNombre(nuevoNombre);
 });
+
+watch(() => props.colorAvatar, (nuevoColor) => {
+  const escena = game?.scene.getScene('MainScene');
+  escena?.cambiarColor(nuevoColor);
+});
+
+function alternarPausa() {
+  const escena = game?.scene.getScene('MainScene');
+  if (!escena) return;
+
+  if (escena.scene.isPaused()) {
+    escena.scene.resume();
+  } else {
+    escena.scene.pause();
+  }
+}
+
+defineExpose({ alternarPausa });
 </script>
 
 <template>
