@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="6">
+ <tileset firstgid="1" name="tileset_tiled" tilewidth="32" tileheight="32" tilecount="8" columns="8">
+  <image source="tileset.png" width="256" height="32"/>
+  <tile id="4"><properties><property name="collides" type="bool" value="true"/></properties></tile>
+ </tileset>
+ <layer id="1" name="Terra" width="20" height="15"><data encoding="csv">
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2
+</data></layer>
+ <layer id="2" name="Mobles" width="20" height="15"><data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data></layer>
+ <layer id="3" name="Parets" width="20" height="15"><data encoding="csv">
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,5,5,5,0,0,5,5,5,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+</data></layer>
+ <objectgroup id="4" name="Objectes">
+  <object id="1" name="spawn" x="96" y="128" width="32" height="32"><properties><property name="tipus" value="spawn"/></properties></object>
+  <object id="2" name="zona" x="320" y="96" width="192" height="160"><properties><property name="tipus" value="zona"/><property name="nomSala" value="Sala de Reunions"/><property name="aforament" type="int" value="6"/></properties></object>
+  <object id="3" name="zona" x="32" y="320" width="192" height="128"><properties><property name="tipus" value="zona"/><property name="nomSala" value="Zona Cafè"/><property name="aforament" type="int" value="4"/></properties></object>
+  <object id="4" name="monitor" x="384" y="128" width="32" height="32"><properties><property name="tipus" value="monitor"/><property name="titol" value="Pantalla Codi"/></properties></object>
+  <object id="5" name="monitor" x="96" y="320" width="32" height="32"><properties><property name="tipus" value="monitor"/><property name="titol" value="Pantalla Info"/></properties></object>
+ </objectgroup>
+</map>
